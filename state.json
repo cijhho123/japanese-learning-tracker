@@ -1,0 +1,51 @@
+{
+  "config": {
+    "source_rotation_order": ["tofugu", "yoku_bi", "tatsumoto", "ixrec", "imabi"],
+    "current_rotation_index": 0,
+    "run_schedule": null,
+    "last_config_update": null
+  },
+  "tofugu": {
+    "url": "https://www.tofugu.com/",
+    "description": "Japanese language and culture lessons with progressive difficulty",
+    "progress_tracking": "No natural order — articles are independent topics. Select intelligently based on dependencies inferred from content.",
+    "used_articles": [],
+    "last_updated": null,
+    "structure_notes": "Navigate via categories/archives. Topics can be standalone or have implicit prerequisites."
+  },
+  "yoku_bi": {
+    "url": "https://yoku.bi/",
+    "description": "Japanese language learning resources and guides",
+    "progress_tracking": "No natural order — select based on content relationships and logical progression",
+    "used_articles": [],
+    "last_updated": null,
+    "structure_notes": "Discover structure on site visit. Track dependencies if discoverable."
+  },
+  "tatsumoto": {
+    "url": "https://tatsumoto.neocities.org/blog/table-of-contents",
+    "description": "Comprehensive structured Japanese learning guide with explicit hierarchy",
+    "progress_tracking": "Hierarchical order — follow the table of contents. Respect stated prerequisites.",
+    "used_articles": [],
+    "last_updated": null,
+    "current_section": null,
+    "structure_notes": "Has explicit prerequisite chains in TOC. Always check dependencies before serving an article."
+  },
+  "ixrec": {
+    "url": "https://ixrec.neocities.org/",
+    "description": "Comprehensive nested articles on Japanese topics (particles, grammar, etc.)",
+    "progress_tracking": "Large pages with multiple subtopics — select individual topics/sections, not full pages. Track at subtopic level.",
+    "used_articles": [],
+    "last_updated": null,
+    "current_page": null,
+    "structure_notes": "Example: /all-about-particles has many subtopics. Extract and track individual sections within pages."
+  },
+  "imabi": {
+    "url": "https://imabi.org/",
+    "description": "Sequential numbered Japanese grammar lessons in progressive order",
+    "progress_tracking": "Natural sequential order — articles are numbered. Can follow order or select based on topics.",
+    "used_articles": [],
+    "last_updated": null,
+    "next_article_index": 1,
+    "structure_notes": "Implicit sequential ordering. Consider respecting sequence for coherent learning path."
+  }
+}
