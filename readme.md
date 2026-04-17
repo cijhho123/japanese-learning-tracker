@@ -8,7 +8,7 @@ Manages state for Claude Code cloud routines that intelligently select and summa
 
 ## How It Works
 
-The Claude Code routine runs **3 times daily** (8:00, 12:00, 17:00 Israel time) and:
+The Claude Code routine runs **daily at 8:00 AM** and:
 
 1. Fetches the main pages of all configured Japanese learning sources
 2. Intelligently selects **one article per run** (or multiple short topics from a single source)
@@ -113,12 +113,12 @@ Each source has:
 The routine cycles through sources in the order defined by `source_rotation_order`:
 
 **Example cycle:**
-- **8:00 AM:** Tofugu (index 0)
-- **12:00 PM:** Yoku.bi (index 1)
-- **5:00 PM:** Tatsumoto (index 2)
-- **Next day 8:00 AM:** ixrec (index 3)
-- **Next day 12:00 PM:** Imabi (index 4)
-- **Next day 5:00 PM:** Back to Tofugu (index 0, wrapped)
+- **Day 1:** Tofugu (index 0)
+- **Day 2:** Yoku.bi (index 1)
+- **Day 3:** Tatsumoto (index 2)
+- **Day 4:** ixrec (index 3)
+- **Day 5:** Imabi (index 4)
+- **Day 6:** Back to Tofugu (index 0, wrapped)
 
 After each run, the routine:
 1. Increments `current_rotation_index`
@@ -229,7 +229,7 @@ Each source's `used_articles` array contains objects with:
 
 ## Example Run Sequence
 
-**Day 1, 8:00 AM:**
+**Day 1:**
 - `current_rotation_index` = 0 → Tofugu
 - Selects an article from Tofugu
 - Sends summary + link
@@ -237,7 +237,7 @@ Each source's `used_articles` array contains objects with:
 - Increments `current_rotation_index` to 1
 - Commits state.json
 
-**Day 1, 12:00 PM:**
+**Day 2:**
 - `current_rotation_index` = 1 → Yoku.bi
 - Selects an article from Yoku.bi
 - Sends summary + link
@@ -245,7 +245,7 @@ Each source's `used_articles` array contains objects with:
 - Increments `current_rotation_index` to 2
 - Commits state.json
 
-**Day 1, 5:00 PM:**
+**Day 3:**
 - `current_rotation_index` = 2 → Tatsumoto
 - Checks Tatsumoto prerequisites
 - Selects next unsatisfied prerequisite
@@ -254,7 +254,7 @@ Each source's `used_articles` array contains objects with:
 - Increments `current_rotation_index` to 3
 - Commits state.json
 
-**Day 2, 8:00 AM:**
+**Day 4:**
 - `current_rotation_index` = 3 → ixrec
 - Extracts a subtopic from ixrec
 - Sends summary + link
@@ -262,7 +262,7 @@ Each source's `used_articles` array contains objects with:
 - Increments `current_rotation_index` to 4
 - Commits state.json
 
-**Day 2, 12:00 PM:**
+**Day 5:**
 - `current_rotation_index` = 4 → Imabi
 - Uses `next_article_index` to suggest next sequential article
 - Sends summary + link
