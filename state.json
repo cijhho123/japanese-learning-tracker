@@ -1,7 +1,7 @@
 {
   "config": {
     "source_rotation_order": ["tofugu", "yoku_bi", "tatsumoto", "ixrec", "imabi"],
-    "current_rotation_index": 0,
+    "current_rotation_index": 1,
     "run_schedule": null,
     "last_config_update": null
   },
@@ -11,8 +11,16 @@
     "progress_tracking": "No built-in order — articles are independent topics organized by category (Japanese, Grammar, Resources, Japan, Series, etc.). Select intelligently based on dependencies inferred from content.",
     "has_built_in_order": false,
     "ordering_strategy": "Infer from content. Some series have internal ordering — respect that if detected.",
-    "used_articles": [],
-    "last_updated": null,
+    "used_articles": [
+      {
+        "title": "Learn Japanese: A Ridiculously Detailed Guide",
+        "url": "https://www.tofugu.com/learn-japanese/",
+        "sent_at": "2026-04-17T00:00:00Z",
+        "source_key": "tofugu",
+        "subtopic": null
+      }
+    ],
+    "last_updated": "2026-04-17T00:00:00Z",
     "structure_notes": "Navigate via categories/archives. Topics can be standalone or have implicit prerequisites. Some series have sequences (e.g., 'What's The Difference?' series)."
   },
   "yoku_bi": {
