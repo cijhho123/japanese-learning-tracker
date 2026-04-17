@@ -8,44 +8,56 @@
   "tofugu": {
     "url": "https://www.tofugu.com/",
     "description": "Japanese language and culture lessons with progressive difficulty",
-    "progress_tracking": "No natural order — articles are independent topics. Select intelligently based on dependencies inferred from content.",
+    "progress_tracking": "No built-in order — articles are independent topics organized by category (Japanese, Grammar, Resources, Japan, Series, etc.). Select intelligently based on dependencies inferred from content.",
+    "has_built_in_order": false,
+    "ordering_strategy": "Infer from content. Some series have internal ordering — respect that if detected.",
     "used_articles": [],
     "last_updated": null,
-    "structure_notes": "Navigate via categories/archives. Topics can be standalone or have implicit prerequisites."
+    "structure_notes": "Navigate via categories/archives. Topics can be standalone or have implicit prerequisites. Some series have sequences (e.g., 'What's The Difference?' series)."
   },
   "yoku_bi": {
     "url": "https://yoku.bi/",
-    "description": "Japanese language learning resources and guides",
-    "progress_tracking": "No natural order — select based on content relationships and logical progression",
+    "description": "Comprehensive sequential Japanese grammar lessons from absolute beginner to advanced",
+    "progress_tracking": "Strict sequential order — numbered lessons (Lesson 0, 1, 2, etc.). Must respect progression. Organized into sections: Section 1 (Absolute Beginner Parts 1-4), Section 2 (Absolute Territory), etc.",
+    "has_built_in_order": true,
+    "ordering_strategy": "Follow lesson sequence strictly. Track next_lesson_index to maintain position.",
     "used_articles": [],
     "last_updated": null,
-    "structure_notes": "Discover structure on site visit. Track dependencies if discoverable."
+    "next_lesson_index": 0,
+    "current_section": "Section 1",
+    "structure_notes": "Lessons are numbered and hierarchically organized. Each lesson builds on previous ones. Follow the sequence for coherent learning."
   },
   "tatsumoto": {
     "url": "https://tatsumoto.neocities.org/blog/table-of-contents",
-    "description": "Comprehensive structured Japanese learning guide with explicit hierarchy",
+    "description": "Comprehensive structured Japanese learning guide with explicit prerequisite hierarchy",
     "progress_tracking": "Hierarchical order — follow the table of contents. Respect stated prerequisites.",
+    "has_built_in_order": true,
+    "ordering_strategy": "Follow TOC hierarchy and prerequisite chains strictly. Never serve an article before its stated prerequisites are satisfied.",
     "used_articles": [],
     "last_updated": null,
     "current_section": null,
-    "structure_notes": "Has explicit prerequisite chains in TOC. Always check dependencies before serving an article."
+    "structure_notes": "Has explicit prerequisite chains in TOC. Always check dependencies before serving an article. This is the most structured source with clear learning paths."
   },
   "ixrec": {
     "url": "https://ixrec.neocities.org/",
-    "description": "Comprehensive nested articles on Japanese topics (particles, grammar, etc.)",
-    "progress_tracking": "Large pages with multiple subtopics — select individual topics/sections, not full pages. Track at subtopic level.",
+    "description": "Comprehensive nested articles on Japanese topics with numbered sections (e.g., 69 particles in /all-about-particles)",
+    "progress_tracking": "Mega-pages with numbered subsections — extract individual sections, not full pages. Example: /all-about-particles contains 69 numbered particles (1. Wa は, 2. Ga が, etc.) plus sentence-ending particles.",
+    "has_built_in_order": true,
+    "ordering_strategy": "Select at subsection level (individual particle, grammar point, etc.), not full page. Within each mega-page, follow numerical order or select intelligently based on dependencies.",
     "used_articles": [],
     "last_updated": null,
     "current_page": null,
-    "structure_notes": "Example: /all-about-particles has many subtopics. Extract and track individual sections within pages."
+    "structure_notes": "Mega-pages like /all-about-particles are collections of numbered entries. Extract and track individual sections. Example: track /all-about-particles#1-wa separately from /all-about-particles#2-ga."
   },
   "imabi": {
     "url": "https://imabi.org/",
     "description": "Sequential numbered Japanese grammar lessons in progressive order",
     "progress_tracking": "Natural sequential order — articles are numbered. Can follow order or select based on topics.",
+    "has_built_in_order": true,
+    "ordering_strategy": "Follow sequential numbering. Track next_article_index to maintain position and suggest coherent progression.",
     "used_articles": [],
     "last_updated": null,
     "next_article_index": 1,
-    "structure_notes": "Implicit sequential ordering. Consider respecting sequence for coherent learning path."
+    "structure_notes": "Numbered articles with implicit sequential ordering. Follow sequence for coherent learning path, or allow intelligent jumps based on content analysis."
   }
 }
