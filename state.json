@@ -1,7 +1,7 @@
 {
   "config": {
     "source_rotation_order": ["tofugu", "yoku_bi", "tatsumoto", "ixrec", "imabi"],
-    "current_rotation_index": 1,
+    "current_rotation_index": 2,
     "run_schedule": null,
     "last_config_update": null
   },
@@ -29,9 +29,17 @@
     "progress_tracking": "Strict sequential order — numbered lessons (Lesson 0, 1, 2, etc.). Must respect progression. Organized into sections: Section 1 (Absolute Beginner Parts 1-4), Section 2 (Absolute Territory), etc.",
     "has_built_in_order": true,
     "ordering_strategy": "Follow lesson sequence strictly. Track next_lesson_index to maintain position.",
-    "used_articles": [],
-    "last_updated": null,
-    "next_lesson_index": 0,
+    "used_articles": [
+      {
+        "title": "Lesson 0: The Anatomy of Japanese Sentences",
+        "url": "https://yoku.bi/Section1/Part1/Lesson0.html",
+        "sent_at": "2026-04-18T00:00:00Z",
+        "source_key": "yoku_bi",
+        "subtopic": "Section 1, Part 1 – Getting Started"
+      }
+    ],
+    "last_updated": "2026-04-18T00:00:00Z",
+    "next_lesson_index": 1,
     "current_section": "Section 1",
     "structure_notes": "Lessons are numbered and hierarchically organized. Each lesson builds on previous ones. Follow the sequence for coherent learning."
   },
