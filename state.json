@@ -1,7 +1,7 @@
 {
   "config": {
     "source_rotation_order": ["tofugu", "yoku_bi", "tatsumoto", "ixrec", "imabi"],
-    "current_rotation_index": 2,
+    "current_rotation_index": 3,
     "run_schedule": null,
     "last_config_update": null
   },
@@ -49,9 +49,24 @@
     "progress_tracking": "Hierarchical order — follow the table of contents. Respect stated prerequisites.",
     "has_built_in_order": true,
     "ordering_strategy": "Follow TOC hierarchy and prerequisite chains strictly. Never serve an article before its stated prerequisites are satisfied.",
-    "used_articles": [],
-    "last_updated": null,
-    "current_section": null,
+    "used_articles": [
+      {
+        "title": "Foreword",
+        "url": "https://tatsumoto.neocities.org/blog/foreword.html",
+        "sent_at": "2026-04-19T00:00:00Z",
+        "source_key": "tatsumoto",
+        "subtopic": "Introduction"
+      },
+      {
+        "title": "What's AJATT?",
+        "url": "https://tatsumoto.neocities.org/blog/whats-ajatt.html",
+        "sent_at": "2026-04-19T00:00:00Z",
+        "source_key": "tatsumoto",
+        "subtopic": "Introduction"
+      }
+    ],
+    "last_updated": "2026-04-19T00:00:00Z",
+    "current_section": "Introduction",
     "structure_notes": "Has explicit prerequisite chains in TOC. Always check dependencies before serving an article. This is the most structured source with clear learning paths."
   },
   "ixrec": {
