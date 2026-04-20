@@ -1,7 +1,7 @@
 {
   "config": {
     "source_rotation_order": ["tofugu", "yoku_bi", "tatsumoto", "ixrec", "imabi"],
-    "current_rotation_index": 3,
+    "current_rotation_index": 4,
     "run_schedule": null,
     "last_config_update": null
   },
@@ -75,9 +75,17 @@
     "progress_tracking": "Mega-pages with numbered subsections — extract individual sections, not full pages. Example: /all-about-particles contains 69 numbered particles (1. Wa は, 2. Ga が, etc.) plus sentence-ending particles.",
     "has_built_in_order": true,
     "ordering_strategy": "Select at subsection level (individual particle, grammar point, etc.), not full page. Within each mega-page, follow numerical order or select intelligently based on dependencies.",
-    "used_articles": [],
-    "last_updated": null,
-    "current_page": null,
+    "used_articles": [
+      {
+        "title": "Introduction: Guide Philosophy, Study Methodology & The Three Alphabets",
+        "url": "https://ixrec.neocities.org/Intro.html",
+        "sent_at": "2026-04-20T00:00:00Z",
+        "source_key": "ixrec",
+        "subtopic": "Introduction"
+      }
+    ],
+    "last_updated": "2026-04-20T00:00:00Z",
+    "current_page": "Intro.html",
     "structure_notes": "Mega-pages like /all-about-particles are collections of numbered entries. Extract and track individual sections. Example: track /all-about-particles#1-wa separately from /all-about-particles#2-ga."
   },
   "imabi": {
