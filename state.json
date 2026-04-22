@@ -7,7 +7,7 @@
       "ixrec",
       "imabi"
     ],
-    "current_rotation_index": 0,
+    "current_rotation_index": 1,
     "run_schedule": null,
     "last_config_update": null
   },
@@ -24,9 +24,16 @@
         "sent_at": "2026-04-17T00:00:00Z",
         "source_key": "tofugu",
         "subtopic": null
+      },
+      {
+        "title": "Learn Hiragana: Tofugu's Ultimate Guide",
+        "url": "https://www.tofugu.com/japanese/learn-hiragana/",
+        "sent_at": "2026-04-22T00:00:00Z",
+        "source_key": "tofugu",
+        "subtopic": null
       }
     ],
-    "last_updated": "2026-04-17T00:00:00Z",
+    "last_updated": "2026-04-22T00:00:00Z",
     "structure_notes": "Navigate via categories/archives. Topics can be standalone or have implicit prerequisites. Some series have sequences (e.g., 'What's The Difference?' series)."
   },
   "yoku_bi": {
